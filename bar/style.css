@@ -1,0 +1,112 @@
+@define-color theme_light_color #fabff5;
+@define-color theme_dark_color #ef83e6;
+@define-color background #ffffff;
+
+
+window.bar {
+    color: @theme_light_color;
+    background-color: @background;
+    border-bottom: 10px solid @theme_light_color;
+    border-right: 10px solid @theme_light_color;
+    border-left: 10px solid @theme_light_color;
+    padding: 5px;
+}
+
+button {
+    min-width: 0;
+    margin: 1px;
+    margin-bottom: 0px;
+    background-color: transparent;
+    border-radius: 0px;
+}
+
+window > box {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+scale * {
+  border-radius: 0px;
+}
+scale * :not(highlight):not(trough) {
+    min-height: 0px;
+    background-color: @theme_light_color;
+    box-shadow: none;
+}
+highlight {
+	background-color: #eea3e8;
+}
+trough {
+	background-color: #ffcefb;
+}
+
+image {
+	color: #ffcefb;
+}
+
+scale {
+  margin-bottom: 8px;
+}
+image {
+  margin-bottom: 8px;
+}
+label {
+  margin-bottom: 8px;
+  color: @theme_light_color;
+}
+label:hover {
+  color: #ffecfd;
+}
+
+
+button:active {
+}
+
+button:hover {
+    opacity: 0.5;
+}
+
+label {
+    font-weight: bold;
+}
+
+.workspaces button {
+    color: @theme_light_color;
+}
+
+.workspaces button.focused * {
+    color: @theme_dark_color;
+    opacity: 1;
+}
+
+levelbar block,
+highlight {
+    min-height: 10px;
+}
+
+#applauncher {
+    border-right: 10px solid @theme_light_color;
+}
+
+#applauncher button {
+    background-color: @theme_light_color;
+}
+#applauncher button * {
+    background-color: @theme_light_color;
+    color: @theme_dark_color;
+    margin-top: 5px;
+}
+#applauncher button image {
+    background-color: @theme_light_color;
+    color: @theme_dark_color;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+#applauncher entry {
+	background-color: @theme_light_color;
+	border-radius: 0;
+	border: 7px solid #ffdffc;
+}
+#applauncher entry.focused {
+	border: none;
+}
